@@ -3,5 +3,7 @@
         <file>Diseño/Darkeum.qss</file>
         <file>Diseño/Devsion.qss</file>
         <file>Diseño/SyNet.qss</file>
+        <file>Diseño/logo.png</file>
+        <file>Diseño/logo2.png</file>
     </qresource>
 </RCC>
