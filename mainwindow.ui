@@ -15,11 +15,11 @@
   </property>
   <property name="windowIcon">
    <iconset resource="Recursos.qrc">
-    <normaloff>:/Diseño/logo2.png</normaloff>:/Diseño/logo2.png</iconset>
+    <normaloff>:/Diseño/ardilla.png</normaloff>:/Diseño/ardilla.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_2">
-    <item row="4" column="0">
+    <item row="5" column="0">
      <widget class="QPushButton" name="salirPB">
       <property name="text">
        <string>SALIR</string>
@@ -56,7 +56,7 @@
       <property name="currentIndex">
        <number>0</number>
       </property>
-      <widget class="QWidget" name="page">
+      <widget class="QWidget" name="operacionesPage">
        <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
@@ -67,179 +67,8 @@
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout">
-         <item row="2" column="1">
-          <widget class="QPushButton" name="raizLB">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>130</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>RAÍZ</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="3">
-          <widget class="QPushButton" name="logaritmicasLB">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>130</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>LOGARITMICAS</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="1">
-          <widget class="QPushButton" name="coshiperbolicoLB">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>130</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>COS. HIPER.</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="QPushButton" name="tanLB">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>130</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>TAN</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="1">
-          <widget class="QPushButton" name="moduloLB">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>130</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>MÓDULO </string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="3">
-          <widget class="QPushButton" name="cosLB">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>130</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>COS</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="0">
-          <widget class="QPushButton" name="senohiperbolicoLB">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>130</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>SEN. HIPER.</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="2">
-          <widget class="QPushButton" name="tanhiperbolicoLB">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>130</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>TAN. HIPER.</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="2">
-          <widget class="QPushButton" name="senLB">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>130</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>SEN</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="2">
-          <widget class="QPushButton" name="factorialLB">
+         <item row="5" column="0">
+          <widget class="QPushButton" name="factorialPB">
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -257,8 +86,8 @@
            </property>
           </widget>
          </item>
-         <item row="0" column="0">
-          <widget class="QPushButton" name="sumaLB">
+         <item row="0" column="2">
+          <widget class="QPushButton" name="multiplicacionPB">
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -272,12 +101,31 @@
             </size>
            </property>
            <property name="text">
-            <string>SUMA</string>
+            <string>MULTIPLICACIÓN</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QPushButton" name="moduloPB">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>130</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>MÓDULO </string>
            </property>
           </widget>
          </item>
          <item row="0" column="3">
-          <widget class="QPushButton" name="divisionLB">
+          <widget class="QPushButton" name="divisionPB">
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -295,8 +143,8 @@
            </property>
           </widget>
          </item>
-         <item row="2" column="0">
-          <widget class="QPushButton" name="potenciaLB">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="sumaPB">
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -310,12 +158,12 @@
             </size>
            </property>
            <property name="text">
-            <string>POTENCIA</string>
+            <string>SUMA</string>
            </property>
           </widget>
          </item>
-         <item row="4" column="3">
-          <widget class="QPushButton" name="pushButton_16">
+         <item row="3" column="2">
+          <widget class="QPushButton" name="cosecantePB">
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -329,12 +177,50 @@
             </size>
            </property>
            <property name="text">
-            <string>V. ABSOLUTO</string>
+            <string>COSECANTE</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QPushButton" name="secantePB">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>130</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>SECANTE</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="QPushButton" name="logaritmicasPB">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>130</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>LOGARITMICAS</string>
            </property>
           </widget>
          </item>
          <item row="0" column="1">
-          <widget class="QPushButton" name="restaLB">
+          <widget class="QPushButton" name="restaPB">
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -352,8 +238,8 @@
            </property>
           </widget>
          </item>
-         <item row="0" column="2">
-          <widget class="QPushButton" name="multiplicacionLB">
+         <item row="2" column="1">
+          <widget class="QPushButton" name="raizPB">
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -367,7 +253,121 @@
             </size>
            </property>
            <property name="text">
-            <string>MULTIPLICACIÓN</string>
+            <string>RAÍZ</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QPushButton" name="cosPB">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>130</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>COSENO</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QPushButton" name="senPB">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>130</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>SENO</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="potenciaPB">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>130</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>POTENCIA</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="tanPB">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>130</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>TANGENTE</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QPushButton" name="cotangentePB">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>130</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>COTANGENTE</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="3">
+          <widget class="QPushButton" name="absolutoPB">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>130</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>V. ABSOLUTO</string>
            </property>
           </widget>
          </item>
@@ -390,14 +390,14 @@
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_2">
+      <widget class="QWidget" name="dosDigitosPage">
        <widget class="QLabel" name="operacion1LB">
         <property name="geometry">
          <rect>
-          <x>210</x>
+          <x>115</x>
           <y>10</y>
-          <width>86</width>
-          <height>19</height>
+          <width>271</width>
+          <height>20</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -406,6 +406,9 @@ font: 12pt &quot;Stencil&quot;;</string>
         </property>
         <property name="text">
          <string>OPERACIÓN</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
        <widget class="QWidget" name="layoutWidget">
@@ -419,10 +422,18 @@ font: 12pt &quot;Stencil&quot;;</string>
         </property>
         <layout class="QGridLayout" name="gridLayout_3">
          <item row="2" column="1">
-          <widget class="QLineEdit" name="cantidad2LE"/>
+          <widget class="QLineEdit" name="cantidad2LE">
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
          </item>
          <item row="2" column="0">
-          <widget class="QLineEdit" name="cantidad1LE"/>
+          <widget class="QLineEdit" name="cantidad1LE">
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
          </item>
          <item row="1" column="0">
           <widget class="QLabel" name="label_2">
@@ -505,32 +516,23 @@ font: 12pt &quot;Stencil&quot;;</string>
         </layout>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_3">
+      <widget class="QWidget" name="tresDigitosPage">
        <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
           <x>180</x>
-          <y>50</y>
+          <y>80</y>
           <width>131</width>
-          <height>251</height>
+          <height>181</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout">
          <item>
-          <widget class="QLabel" name="operacion2LB">
-           <property name="styleSheet">
-            <string notr="true">font: 12pt &quot;Stencil&quot;;</string>
-           </property>
-           <property name="text">
-            <string>OPERACION</string>
-           </property>
+          <widget class="QLineEdit" name="cantidadLE">
            <property name="alignment">
             <set>Qt::AlignCenter</set>
            </property>
           </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit_3"/>
          </item>
          <item>
           <widget class="QPushButton" name="calcular2PB">
@@ -573,6 +575,25 @@ font: 12pt &quot;Stencil&quot;;</string>
           </widget>
          </item>
         </layout>
+       </widget>
+       <widget class="QLabel" name="operacion2LB">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>30</y>
+          <width>291</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Stencil&quot;;</string>
+        </property>
+        <property name="text">
+         <string>OPERACION</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
        </widget>
       </widget>
      </widget>
