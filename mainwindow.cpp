@@ -123,6 +123,40 @@ float MainWindow::coseno(float n)
     return resultado;
 }
 
+int MainWindow::factorial(const int n)
+{
+    int result;
+    __asm__ __volatile__(
+            "xor %%eax, %%eax;"
+            "inc %%eax;"
+            "xor %%ebx, %%ebx;"
+            "inc %%ebx;"
+            "movl %1,%%ecx;"
+            "fun: mul %%ebx;"
+            "inc %%ebx;"
+            "cmp %%ebx,%%ecx;"
+            "jne fun;"
+            "mul %%ebx;"
+            "movl %%eax, %0;" : "=g" (result) : "g" (n)
+    );
+    return result;
+}
+
+int MainWindow::absoluto(const int n)
+{
+    int result;
+    int neg = -1;
+    __asm__ __volatile__(
+            "mov %1, %%eax;"
+            "cmp $0, %%eax;"
+            "jg positive;"
+            "mov %2, %%ebx;"
+            "mul %%ebx;"
+            "positive: mov %%eax, %0;" : "=g" (result) : "g" (n), "g" (neg)
+    );
+    return result;
+}
+
 void MainWindow::on_sumaPB_clicked()
 {
     ui->operacion1LB->setText("SUMA");
@@ -237,14 +271,14 @@ void MainWindow::on_factorialPB_clicked()
 void MainWindow::on_logaritmicasPB_clicked()
 {
     ui->operacion1LB->setText("LOGARITMO");
-    ui->stackedWidget->setCurrentIndex(1);
+    ui->stackedWidget->setCurrentIndex(2);
     operacion = LOGARITMO;
 }
 
 void MainWindow::on_absolutoPB_clicked()
 {
     ui->operacion1LB->setText("VALOR ABSOLUTO");
-    ui->stackedWidget->setCurrentIndex(1);
+    ui->stackedWidget->setCurrentIndex(2);
     operacion = ABSOLUTO;
 }
 
@@ -336,6 +370,16 @@ void MainWindow::on_calcular2PB_clicked()
 
     case COTANGENTE:
         result=coseno(n)/seno(n);
+        ui->igual2LB->setNum(result);
+    break;
+
+    case FACTORIAL:
+        result=factorial(n);
+        ui->igual2LB->setNum(result);
+    break;
+
+    case ABSOLUTO:
+        result=absoluto(n);
         ui->igual2LB->setNum(result);
     break;
 
