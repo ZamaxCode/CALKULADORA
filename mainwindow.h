@@ -25,9 +25,7 @@ public:
     int modulo(const int n);
     int factorial(const int n);
     float logaritmo(const float a, const float b);
-    float senoH(const float a, const float b);
-    float cosenoH(const float a, const float b);
-    int absoluto(const int a, const int b);
+    int absoluto(const int n);
 
 
 private slots:
