@@ -123,6 +123,22 @@ float MainWindow::coseno(float n)
     return resultado;
 }
 
+int MainWindow::modulo(const int a, const int b)
+{
+    int result;
+    __asm__ __volatile(
+            "mov %1, %%eax;"
+            "mov %2, %%ebx;"
+            "funcion: cmp %%ebx, %%eax;"
+            "jl fin;"
+            "sub %%ebx, %%eax;"
+            "jmp funcion;"
+            "fin: movl %%eax, %0;" : "=g" (result) : "g" (a), "g" (b)
+
+    );
+    return result;
+}
+
 int MainWindow::factorial(const int n)
 {
     int result;
@@ -142,6 +158,7 @@ int MainWindow::factorial(const int n)
     return result;
 }
 
+
 int MainWindow::absoluto(const int n)
 {
     int result;
@@ -156,6 +173,7 @@ int MainWindow::absoluto(const int n)
     );
     return result;
 }
+
 
 void MainWindow::on_sumaPB_clicked()
 {
@@ -252,14 +270,6 @@ void MainWindow::on_cotangentePB_clicked()
 }
 
 
-void MainWindow::on_moduloPB_clicked()
-{
-    ui->operacion1LB->setText("MODULO");
-    ui->stackedWidget->setCurrentIndex(2);
-    operacion = MODULO;
-}
-
-
 void MainWindow::on_factorialPB_clicked()
 {
     ui->operacion1LB->setText("FACTORIAL");
@@ -267,13 +277,6 @@ void MainWindow::on_factorialPB_clicked()
     operacion = FACTORIAL;
 }
 
-
-void MainWindow::on_logaritmicasPB_clicked()
-{
-    ui->operacion1LB->setText("LOGARITMO");
-    ui->stackedWidget->setCurrentIndex(2);
-    operacion = LOGARITMO;
-}
 
 void MainWindow::on_absolutoPB_clicked()
 {

@@ -22,7 +22,7 @@ public:
     float raiz(const float n);
     float seno(float n);
     float coseno(float n);
-    int modulo(const int n);
+    int modulo(const int a, const int b);
     int factorial(const int n);
     float logaritmo(const float a, const float b);
     int absoluto(const int n);
@@ -47,11 +47,7 @@ private slots:
 
     void on_tanPB_clicked();
 
-    void on_moduloPB_clicked();
-
     void on_factorialPB_clicked();
-
-    void on_logaritmicasPB_clicked();
 
     void on_secantePB_clicked();
 
@@ -74,7 +70,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     int operacion = 0;
-    enum op {SUMA = 1, RESTA, MULTIPLICACION, DIVISION, POTENCIA, RAIZ, SENO, COSENO, TANGENTE, SECANTE, COSECANTE, COTANGENTE, MODULO, FACTORIAL, LOGARITMO, ABSOLUTO};
+    enum op {SUMA = 1, RESTA, MULTIPLICACION, DIVISION, POTENCIA, RAIZ, SENO, COSENO, TANGENTE, SECANTE, COSECANTE, COTANGENTE, FACTORIAL, ABSOLUTO};
 
 };
 #endif // MAINWINDOW_H

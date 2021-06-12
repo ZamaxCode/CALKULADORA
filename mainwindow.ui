@@ -67,25 +67,6 @@
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout">
-         <item row="5" column="0">
-          <widget class="QPushButton" name="factorialPB">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>130</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>FACTORIAL</string>
-           </property>
-          </widget>
-         </item>
          <item row="0" column="2">
           <widget class="QPushButton" name="multiplicacionPB">
            <property name="minimumSize">
@@ -102,25 +83,6 @@
            </property>
            <property name="text">
             <string>MULTIPLICACIÓN</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="1">
-          <widget class="QPushButton" name="moduloPB">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>130</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>MÓDULO </string>
            </property>
           </widget>
          </item>
@@ -197,25 +159,6 @@
            </property>
            <property name="text">
             <string>SECANTE</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="2">
-          <widget class="QPushButton" name="logaritmicasPB">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>130</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>LOGARITMICAS</string>
            </property>
           </widget>
          </item>
@@ -352,7 +295,26 @@
            </property>
           </widget>
          </item>
-         <item row="5" column="3">
+         <item row="5" column="1">
+          <widget class="QPushButton" name="factorialPB">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>130</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>FACTORIAL</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
           <widget class="QPushButton" name="absolutoPB">
            <property name="minimumSize">
             <size>
