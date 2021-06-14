@@ -272,7 +272,7 @@ void MainWindow::on_cotangentePB_clicked()
 
 void MainWindow::on_factorialPB_clicked()
 {
-    ui->operacion1LB->setText("FACTORIAL");
+    ui->operacion2LB->setText("FACTORIAL");
     ui->stackedWidget->setCurrentIndex(2);
     operacion = FACTORIAL;
 }
@@ -280,7 +280,7 @@ void MainWindow::on_factorialPB_clicked()
 
 void MainWindow::on_absolutoPB_clicked()
 {
-    ui->operacion1LB->setText("VALOR ABSOLUTO");
+    ui->operacion2LB->setText("VALOR ABSOLUTO");
     ui->stackedWidget->setCurrentIndex(2);
     operacion = ABSOLUTO;
 }
@@ -320,7 +320,6 @@ void MainWindow::on_calcular1PB_clicked()
     break;
 
     }
-
 
 }
 
